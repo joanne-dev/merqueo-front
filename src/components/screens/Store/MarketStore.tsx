@@ -3,10 +3,10 @@ import {CardsStyled, StoreStyled} from "./styles";
 import {useFetchProducts} from "../../../hooks/useFetchProducts";
 import Header from "../../organisms/Header/Header";
 import ProductCard from "../../molecules/ProductCard/ProductCard";
+import {Product} from "../../../types/product";
 
-const Store: FunctionComponent<any> = ({}) => {
+const MarketStore: FunctionComponent<any> = ({}) => {
     const { results } = useFetchProducts();
-    console.log('results: ', results);
 
     return (
         <StoreStyled>
@@ -14,13 +14,10 @@ const Store: FunctionComponent<any> = ({}) => {
             <CardsStyled>
                 {
                     results && results.data &&
-                    results.data.map((product: any)=>(
+                    results.data.map((product: Product)=>(
                             <ProductCard
-                                id={product.id}
-                                name = {product.name}
-                                price = {product.price}
-                                imageUrl= {product.imageUrl}
-                                maxQuantity= {product.quantity}
+                                key = {product.id}
+                                product = {product}
                             />
                         )
                     )
@@ -30,4 +27,4 @@ const Store: FunctionComponent<any> = ({}) => {
         </StoreStyled>
     )
 }
-export default Store;
+export default MarketStore;
