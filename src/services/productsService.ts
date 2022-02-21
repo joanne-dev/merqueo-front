@@ -1,4 +1,4 @@
-const ENDPOINT = 'https://merqueo-back.herokuapp.com';
+const ENDPOINT = 'http://localhost:9021';
 export const getProducts = async () => {
     const url = `${ENDPOINT}/products`;
     const response = await fetch(url);
