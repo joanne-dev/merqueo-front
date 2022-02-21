@@ -2,7 +2,7 @@
 Hola! 👋
 Me alegra llegar hasta este punto de enviar la solución para la prueba técnica, es muy gratificante para mi realizar este tipo de retos. A continuación nombraré aspectos para tener en cuenta del desarrollo:
 
-- **Uso de Redux**. Este proyecto se realizo utilizando Redux para guardar el estado de la aplicacion (carrito de compras), con  el fin de que al recargar la aplicacion el estado del carrito de compras se restablezca.
+- **Uso de Redux**. Este proyecto se realizó utilizando Redux para guardar el estado de la aplicación (carrito de compras), con  el fín de que al recargar la aplicación el estado del carrito de compras se restablezca.
 
 ## Available Scripts
 
